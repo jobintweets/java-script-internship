@@ -1,0 +1,24 @@
+
+#siform{
+    width:40%;
+    /* border:3px solid green; */
+    height:300px;
+    float: left;
+    
+
+
+}
+ #sires{
+    width:40%;
+    
+    float:left;
+    /* border:3px solid green; */
+    height:300px;
+    float:right;
+    
+
+}
+body{
+    margin-left: 10%;
+    margin-right:10%;
+}

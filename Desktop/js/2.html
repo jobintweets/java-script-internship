@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <link rel="stylesheet" href="css/main.css" />
+    <title>SI CALCULATOR</title>
+    
+    <script type="text/javascript">
+    function calc(){
+        amount=document.getElementById('amount').value;
+        rate=document.getElementById('rate').value;
+        time=document.getElementById('time').value;
+res=(amount*rate*time)/100;
+alert(res);
+document.getElementById('res').innerHTML="result" + res;
+prompt("do u want to continue");
+    }
+    
+    
+    
+    </script>
+</head>
+<body>
+
+        <a href="index.html">home</a>
+        <h2>SI calc</h2>
+
+
+
+
+        <div id="si">
+<div id="siform">
+<form>
+    <fieldset>
+<legend>Simple Interest</legend>
+<p>
+<label>Amount</label>
+<input type='text' id="amount"></input>
+
+
+</p>
+<p>
+        <label>Rate</label>
+        <input type='text' id="rate"></input>
+        
+        
+        </p>
+        <p>
+                <label>Time</label>
+                <input type='text' id="time"></input>
+            </p>
+
+                <p>
+                        <label>&nbsp;</label>
+                        <input type='button' value="submitt" onclick="calc()"></input>
+                        <!-- <button onclick="calc()">submitt</button> -->
+                        
+            </p>
+
+
+
+    </fieldset>
+</form>
+
+</div>
+<div id="sires">
+    <form>
+        <fieldset>
+            <legend>Result</legend>
+            <p id="res"></p>
+        </fieldset>
+    </form>
+        
+</div>
+        </div>
+
+        <div>
+            <input type="text" id="num"></input>
+        </div>
+
+</body>
+</html>
