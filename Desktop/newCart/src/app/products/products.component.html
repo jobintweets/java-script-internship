@@ -1,0 +1,32 @@
+
+
+  
+  <mat-card class="my-card1 card-item" *ngFor="let product of products" >
+      <mat-card-actions class='btn'>
+          <button mat-fab (click)="cartify(product)" [disabled]='product.cart' title="Add To Cart">
+            <mat-icon>add_shopping_cart</mat-icon>
+          </button>
+        </mat-card-actions>
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{product.name}} </mat-card-title>
+        <!-- <mat-card-subtitle>{{product.category}}</mat-card-subtitle> -->
+       
+      </mat-card-header>
+      <img class='image' src="{{product.img}}" alt="loading image" width="210" height="210">
+      <mat-card-content>
+        <p>
+          {{product.description}}
+        </p>
+      </mat-card-content>
+     
+  
+    </mat-card>  
+    <!-- </mat-card> -->
+  
+  
+   
+      
+     
+     
+      

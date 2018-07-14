@@ -1,0 +1,30 @@
+.my-card1{
+  background-image: url('/assets/image/cardbg1.jpg');
+     background-size: cover; 
+  margin: 8px !important;
+      display: inline-block;
+      border:2px solid #f10b0be1;
+    width: 330px;
+    height:290px;
+     background-color:#bce2d3;
+     -webkit-transition: border 1s,background-image 1s;
+     /* -moz-transition: border 1s,background-image 1s; */
+ }
+ .my-card1:hover{
+border:2px solid #a2b11af1;
+background-image:url('/assets/image/cardbg2.jpg');
+/* background-size: cover; */
+ }
+  
+.image{
+  display:block;
+  float:none;
+  margin:auto;
+}  
+  .btn{
+    float:right;
+    display:block;
+    margin:auto;
+
+  }
+ 

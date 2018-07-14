@@ -1,0 +1,36 @@
+ <h1>MY CART</h1>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <div class="icon-bar">
+    <a class="active" href="app.component.ts"><i class="fa fa-home"></i></a> 
+    <a href="#"><i class="fa fa-search"></i></a> 
+    <a href="#"><i class="fa fa-envelope"></i></a> 
+    <a href="#"><i class="fa fa-globe"></i></a>
+    <a href="#"><i class="fa fa-trash"></i></a> 
+  </div>
+ 
+ <mat-card>
+  <mat-card class="cart-item " *ngFor="let cart of cartItem">
+      <mat-card-actions class="btn">
+          <button mat-fab (click)="decartify(cart)" title="Remove From Cart"> <mat-icon>remove_shopping_cart</mat-icon></button>
+         
+        </mat-card-actions> 
+      
+          <mat-card-header ><p>{{productRemoved}}</p>
+           
+            <mat-card-title>{{cart.name}}</mat-card-title>
+            <mat-card-subtitle>{{cart.category}}</mat-card-subtitle>
+          </mat-card-header>
+          
+          <img class='image'  src="{{cart.img}}" alt="nike shoe" width="230" height="230" >
+          <mat-card-content>
+            <p>
+              {{cart.description}}
+            </p>
+          </mat-card-content>
+         
+        </mat-card>
+        
+       
+      </mat-card>
+  
